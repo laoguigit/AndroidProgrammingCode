@@ -9,7 +9,15 @@ public class Crime {
     String mTitle;
     Date mDate;
     boolean mSolved;
+    String mSuspect;
 
+    public String getmSuspect() {
+        return mSuspect;
+    }
+
+    public void setmSuspect(String mSuspect) {
+        this.mSuspect = mSuspect;
+    }
 
     public Crime(UUID id){
         mId = id;

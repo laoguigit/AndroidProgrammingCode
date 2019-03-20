@@ -38,6 +38,7 @@ public class CrimeCursorWrapper extends CursorWrapper {
         crime.setmTitle(title);
         crime.setmDate(new Date(date));
         crime.setmSolved(isSolved != 0);
+        crime.setmSuspect(getString(getColumnIndex(CrimeTable.Cols.SUSPECT)));
 
         return crime;
     }
