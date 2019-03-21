@@ -195,4 +195,7 @@ public class CrimeListFragment extends Fragment {
         AppCompatActivity activity = (AppCompatActivity)getActivity();
         activity.getSupportActionBar().setSubtitle(subTitle);
     }
+
+
+
 }
