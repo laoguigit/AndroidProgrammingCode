@@ -21,6 +21,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 
 import java.util.Date;
@@ -34,6 +36,9 @@ public class CrimeFragment extends Fragment {
     CheckBox mSolvedCheckBox;
     private Button mReportButton;
     private Button mSuspectButton;
+
+    private ImageButton mPhotoButton;
+    private ImageView mPhooView;
 
 
     private static final String DIALOG_DATE = "DialogDate";
