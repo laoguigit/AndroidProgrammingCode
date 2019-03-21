@@ -8,6 +8,7 @@ import android.location.Criteria;
 
 import com.example.administrator.criminalintent.CrimeDbSchema.CrimeTable;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -108,4 +109,8 @@ public class CrimeLab {
         return new CrimeCursorWrapper(cursor);
     }
 
+    public File getPhotoFile(Crime crime){
+        File filesDir = mContext.getFilesDir();
+        return new File(filesDir, crime.getPhotoFilename());
+    }
 }

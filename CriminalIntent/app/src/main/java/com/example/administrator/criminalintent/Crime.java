@@ -60,5 +60,9 @@ public class Crime {
     public void setmSolved(boolean mSolved) {
         this.mSolved = mSolved;
     }
+
+    public String getPhotoFilename(){
+        return "IMG_" + getmId().toString() + ".jpg";
+    }
 }
 
